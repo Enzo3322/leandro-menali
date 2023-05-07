@@ -1,0 +1,200 @@
+@import './variable.scss';
+
+.header {
+  height: 90px;
+  box-shadow: 10px 10px 50px #ccc;
+  background-color: #f5f5f5;
+display: flex;
+align-items: center;
+  nav {
+max-width: 1240px;
+margin: 0 auto;
+width: 100%;
+display: flex;
+justify-content: space-between;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+
+
+
+  .hero {
+    display: flex;
+    gap: 100px;
+    height: calc(85vh - 90px);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+
+    .textContainer {
+      max-width: 550px;
+      max-height: 375px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .introText {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        color: #282938;
+      }
+
+      .mainText {
+        font-size: 64px;
+        font-family: Roboto;
+        font-weight: 700;
+        line-height: 89px;
+        color: $title;
+
+        b {
+          color: $primary;
+        }
+      }
+
+      .descriptionText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+      }
+
+      .getInTouch {
+        padding: 15px 25px;
+        background-color: $primary;
+        color: #fff;
+        border: 0;
+        border-radius: 8px;
+        margin-top: 50px;
+        width: 170px;
+      }
+    }
+
+    .imageContainer {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      max-height: 375px;
+      width: 100%;
+
+      img {
+        width: 400px;
+        height: 100px;
+        background-color: $primary;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .skills {
+
+    .headerContainer {
+
+      .preTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #282938;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 120%;
+        color: #282938;
+      }
+    }
+  }
+
+  .about {
+
+    .imageContainer {}
+
+    .textContainer {
+      .preTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #282938;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 120%;
+        color: #282938;
+
+        b {
+          color: $primary;
+          font-weight: 700;
+        }
+      }
+
+      .text {}
+    }
+  }
+
+  .portfolio {
+    .headerContainer {
+      .preTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #282938;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 120%;
+        color: #282938;
+      }
+    }
+
+    .visitMyGithub {}
+  }
+
+  .contact {
+    .preTitle {}
+
+    .title {}
+
+    .text {}
+
+    .button {
+      .linkedin {}
+
+      .github {}
+
+      .gmail {}
+    }
+  }
+}
+
+.footer {
+  .links {
+    li {}
+  }
+
+  .socialIcons {}
+}
