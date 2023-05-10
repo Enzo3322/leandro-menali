@@ -1,0 +1,22 @@
+@import '../../../styles/variable.scss';
+
+.container {
+    padding: 32px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: $primary;
+    .iconContainer {
+        margin-bottom: 12px;
+        path {
+            stroke: #fff;
+        }
+
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }   
+    p{
+
+    }
+}

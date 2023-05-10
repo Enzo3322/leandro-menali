@@ -1,21 +1,46 @@
-@import './variable.scss';
+@import "./variable.scss";
 
 .header {
   height: 90px;
   box-shadow: 10px 10px 50px #ccc;
   background-color: #f5f5f5;
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
   nav {
-max-width: 1240px;
-margin: 0 auto;
-width: 100%;
-display: flex;
-justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     ul {
       list-style: none;
       display: flex;
       gap: 20px;
+      li {
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 10px 20px;
+        border-radius: 30px;
+        &:hover {
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+    .contactButton {
+      padding: 12px 20px;
+      border: 1px solid $primary;
+      border-radius: 8px;
+      color: $primary;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #fff;
+        background-color: $primary;
+      }
     }
   }
 }
@@ -24,8 +49,6 @@ justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
-
-
 
   .hero {
     display: flex;
@@ -87,23 +110,29 @@ justify-content: space-between;
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
-      max-height: 375px;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
 
       img {
-        width: 400px;
-        height: 100px;
-        background-color: $primary;
+        width: 350px;
         border-radius: 16px;
+        position: relative;
+        z-index: 88;
+      }
+      span {
+        margin-top: -134px;
+        height: 130px;
+        border-radius: 16px;
+        background-color: $primary;
+        width: 450px;
       }
     }
   }
 
   .skills {
-
+    margin-bottom: 200px;
     .headerContainer {
-
       .preTitle {
         font-style: normal;
         font-weight: 600;
@@ -115,7 +144,7 @@ justify-content: space-between;
       .title {
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 48px;
         line-height: 120%;
         color: #282938;
       }
@@ -123,10 +152,25 @@ justify-content: space-between;
   }
 
   .about {
-
-    .imageContainer {}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    .imageContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        background-color: $primary;
+        border: 4px solid $primary;
+        border-radius: 800px;
+      }
+    }
 
     .textContainer {
+      width: 100%;
+
       .preTitle {
         font-style: normal;
         font-weight: 600;
@@ -148,7 +192,9 @@ justify-content: space-between;
         }
       }
 
-      .text {}
+      .text {
+        max-width: 500px;
+      }
     }
   }
 
@@ -165,36 +211,54 @@ justify-content: space-between;
       .title {
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 48px;
         line-height: 120%;
         color: #282938;
       }
     }
 
-    .visitMyGithub {}
+    .visitMyGithub {
+    }
   }
 
   .contact {
-    .preTitle {}
+    .preTitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #282938;
+    }
 
-    .title {}
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      color: #282938;
+    }
 
-    .text {}
+    .text {
+    }
 
     .button {
-      .linkedin {}
+      .linkedin {
+      }
 
-      .github {}
+      .github {
+      }
 
-      .gmail {}
+      .gmail {
+      }
     }
   }
 }
 
 .footer {
   .links {
-    li {}
+    li {
+    }
   }
 
-  .socialIcons {}
+  .socialIcons {
+  }
 }
